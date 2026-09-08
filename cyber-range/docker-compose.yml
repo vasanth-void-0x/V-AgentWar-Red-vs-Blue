@@ -1,0 +1,17 @@
+services:
+  target:
+    image: nginx:alpine
+    container_name: v-agentwar-target
+    ports:
+      - "8088:80"
+    networks:
+      - arena
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+
+networks:
+  arena:
+    name: v-agentwar-isolated-range
+    internal: true
