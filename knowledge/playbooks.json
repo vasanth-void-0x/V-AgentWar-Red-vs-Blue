@@ -1,0 +1,6 @@
+[
+  {"id":"scan-awareness","team":"blue","signals":["scan"],"summary":"Repeated connection attempts across services should be correlated before containment."},
+  {"id":"web-probe-awareness","team":"blue","signals":["web_probe"],"summary":"Unexpected web probing can be isolated and reviewed using application telemetry."},
+  {"id":"auth-anomaly-awareness","team":"blue","signals":["auth_anomaly"],"summary":"Authentication anomalies should trigger verification and temporary protective controls."},
+  {"id":"adaptive-red","team":"red","summary":"Within the authorized range, prefer a different predefined simulation when the previous strategy was contained."}
+]
